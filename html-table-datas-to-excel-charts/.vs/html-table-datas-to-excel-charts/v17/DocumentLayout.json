@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\git\\data-processing\\html-table-datas-to-excel-charts\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2A0826C0-92E2-42CB-A1C3-12D23CC889C9}|html-table-datas-to-excel-charts\\html-table-datas-to-excel-charts.csproj|d:\\git\\data-processing\\html-table-datas-to-excel-charts\\html-table-datas-to-excel-charts\\default.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A0826C0-92E2-42CB-A1C3-12D23CC889C9}|html-table-datas-to-excel-charts\\html-table-datas-to-excel-charts.csproj|solutionrelative:html-table-datas-to-excel-charts\\default.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A0826C0-92E2-42CB-A1C3-12D23CC889C9}|html-table-datas-to-excel-charts\\html-table-datas-to-excel-charts.csproj|d:\\git\\data-processing\\html-table-datas-to-excel-charts\\html-table-datas-to-excel-charts\\default.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{2A0826C0-92E2-42CB-A1C3-12D23CC889C9}|html-table-datas-to-excel-charts\\html-table-datas-to-excel-charts.csproj|solutionrelative:html-table-datas-to-excel-charts\\default.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A0826C0-92E2-42CB-A1C3-12D23CC889C9}|html-table-datas-to-excel-charts\\html-table-datas-to-excel-charts.csproj|d:\\git\\data-processing\\html-table-datas-to-excel-charts\\html-table-datas-to-excel-charts\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{2A0826C0-92E2-42CB-A1C3-12D23CC889C9}|html-table-datas-to-excel-charts\\html-table-datas-to-excel-charts.csproj|solutionrelative:html-table-datas-to-excel-charts\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "default.aspx.cs",
+              "DocumentMoniker": "D:\\git\\data-processing\\html-table-datas-to-excel-charts\\html-table-datas-to-excel-charts\\default.aspx.cs",
+              "RelativeDocumentMoniker": "html-table-datas-to-excel-charts\\default.aspx.cs",
+              "ToolTip": "D:\\git\\data-processing\\html-table-datas-to-excel-charts\\html-table-datas-to-excel-charts\\default.aspx.cs",
+              "RelativeToolTip": "html-table-datas-to-excel-charts\\default.aspx.cs",
+              "ViewState": "AQIAAH0AAAAAAAAAAAAgwI0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-22T08:23:17.806Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Web.config",
+              "DocumentMoniker": "D:\\git\\data-processing\\html-table-datas-to-excel-charts\\html-table-datas-to-excel-charts\\Web.config",
+              "RelativeDocumentMoniker": "html-table-datas-to-excel-charts\\Web.config",
+              "ToolTip": "D:\\git\\data-processing\\html-table-datas-to-excel-charts\\html-table-datas-to-excel-charts\\Web.config",
+              "RelativeToolTip": "html-table-datas-to-excel-charts\\Web.config",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-04-22T08:21:50.041Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "default.aspx",
+              "DocumentMoniker": "D:\\git\\data-processing\\html-table-datas-to-excel-charts\\html-table-datas-to-excel-charts\\default.aspx",
+              "RelativeDocumentMoniker": "html-table-datas-to-excel-charts\\default.aspx",
+              "ToolTip": "D:\\git\\data-processing\\html-table-datas-to-excel-charts\\html-table-datas-to-excel-charts\\default.aspx",
+              "RelativeToolTip": "html-table-datas-to-excel-charts\\default.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-04-22T08:21:45.37Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
