@@ -1,8 +1,8 @@
-## Dynamic Data Visualization with Excel Download
+## 1-Dynamic Data Visualization with Excel Download
 
 My code reads data dynamically from a table and generates a pie chart for each column. It also enables you to download the charts as Excel files.
 
-### Usage
+## Usage
 
 1. Clone the repository.
 2. Insert your data into the table.
