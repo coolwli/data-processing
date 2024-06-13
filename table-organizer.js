@@ -6,36 +6,24 @@ let currentPage = 1;
 let ascending = true;
 let filteredData = [];
 
-function sortData(index) {
-    filteredData.sort((a, b) => {
-        let aValue = a[Object.keys(a)[index]];
-        let bValue = b[Object.keys(b)[index]];
-        if (!isNaN(aValue) && !isNaN(bValue)) {
-            return ascending ? aValue - bValue : bValue - aValue;
-        }
-        return ascending ? aValue.trim().localeCompare(bValue.trim()) : bValue.trim().localeCompare(aValue.trim());
-    });
-    currentPage = 1;
-    renderPage(currentPage);
-}
 
 function sortDatas(index) {
     filteredData.sort(function (a, b) {
-        let aValue = a[Object.keys(a)[index]].trim();
-        let bValue = b[Object.keys(b)[index]].trim();
+        let aValue = a[Object.keys(a)[index]];
+        let bValue = b[Object.keys(b)[index]];
 
-        const datePattern = /^\d{2}\/\d{2}\/\d{4}$/;
 
-        if (datePattern.test(aValue) && datePattern.test(bValue)) {
-            aValue = new Date(aValue);
-            bValue = new Date(bValue);
-            console.log(aValue, bValue);
+        if (!isNaN(aValue) && !isNaN(bValue)) {
             return ascending ? aValue - bValue : bValue - aValue;
         }
-        else if (!isNaN(aValue) && !isNaN(bValue)) {
+        else if (index === 9) {
+            if (aValue == "-") return 1;
+            if (bValue == "-") return -1;
+            aValue = new Date(aValue.trim());
+            bValue = new Date(bValue.trim());
             return ascending ? aValue - bValue : bValue - aValue;
         }
-        return ascending ? aValue.localeCompare(bValue) : bValue.localeCompare(aValue);
+        return ascending ? aValue.trim().localeCompare(bValue.trim()) : bValue.trim().localeCompare(aValue.trim());
     });
     currentPage = 1;
     renderPage(currentPage);
@@ -110,7 +98,7 @@ function initializeTable() {
     });
     renderPagination();
     updateCounter();
-    sortData(0);
+    sortDatas(0);
 }
 
 function generateColumnCheckboxes(dropdownContent) {
@@ -124,10 +112,16 @@ function generateColumnCheckboxes(dropdownContent) {
         }
     });
 
-    const values = [...new Set(filteredData.map(row => row[Object.keys(row)[columnIndex]]))];
-
+    const values = [...new Set(filteredData.map(row => row[Object.keys(row)[columnIndex]].toString().trim()))];
     values.sort(function (a, b) {
         if (!isNaN(a) && !isNaN(b)) {
+            return ascending ? a - b : b - a;
+        }
+        else if (columnIndex == 9) {
+            if (a == "-") return 1;
+            if (b == "-") return -1;
+            a = new Date(a);
+            b = new Date(b);
             return ascending ? a - b : b - a;
         }
         if (a == null) return -1;
@@ -214,7 +208,7 @@ document.querySelectorAll("th").forEach((th, index) => {
     th.addEventListener('click', function (event) {
         if (!event.target.closest('.dropdown-content')) {
             ascending = !ascending;
-            sortData(index);
+            sortDatas(index);
         }
     });
 });
@@ -225,5 +219,5 @@ document.getElementById('reset-button').addEventListener('click', () => {
     document.querySelectorAll("input[type='text']").forEach((input) => { input.value = ""; });
     ascending = true;
     filterTable();
-    sortData(0);
+    sortDatas(0);
 });
